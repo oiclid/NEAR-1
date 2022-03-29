@@ -11,13 +11,24 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" id="near-fonts-css" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&amp;display=swap" type="text/css" media="all">
+    <link rel="stylesheet" id="near-fonts-css"
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&amp;display=swap" type="text/css"
+        media="all">
     <style>
         body {
             max-width: 100%;
-            background-image: linear-gradient(140deg, #ffffff 0%, #ffffff 50%, #ffffff 55%);
-          
+            background-image: linear-gradient(140deg, #ffffff 0%, #ffffff 50%, #ffffff 55%);}
+        h6 {
+        font-family: Manrope, sans-serif;
+        letter-spacing: 5px;
+        line-height: 1.5;
+        font-size: 0.875em;
+        
+
+
         }
+
+     
 
         #nav>img {
             height: 100px;
@@ -30,12 +41,16 @@
 
         }
 
+        strong {
+            font-weight: bold;
+        }
+
         #blue {
             background-image: linear-gradient(140deg, #edecec 0%, #f1f1fc 50%, #f5f6f9 55%);
         }
 
         .divider {
-            border: 8px solid #0C485E;
+            border: 8px solid #eef5ff;
             border-radius: 5px;
             margin: 2rem 0;
         }
@@ -47,7 +62,8 @@
             height: 500px;
             background-size: cover;
         }
-        #sec > h1 {
+
+        #sec>h1 {
             margin-left: 30px;
         }
 
@@ -87,11 +103,13 @@
             letter-spacing: 5px;
             font-size: 15px;
             line-height: 1.5;
-            padding: 15px;
-            font-family: Manrope,sans-serif;
+            padding: 30px;
+            font-family: Manrope, sans-serif;
             font-size: .875rem;
             font-weight: 500;
         }
+
+
 
         @media screen and (max-width: 575px) {
             .divider {
@@ -102,16 +120,16 @@
             }
         }
 
-       
-        .dis >  a {
+
+        .dis>a {
             display: inline-block;
             margin: 0 20px 0 0;
             height: 10px;
-}
+        }
 
-.dis > i {
-    height: 80px;
-}
+        .dis>i {
+            height: 80px;
+        }
     </style>
 </head>
 
@@ -128,19 +146,37 @@
     <!-- Header -->
     <header class="w3-display-container w3-content w3-wide" style="max-width:100%;min-width:400px" id="home">
         <img class="w3-image" src="imgs/1.jpg" alt="" width="1600" height="800">
-        <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+
+        <div class="w3-card-4 " id="Text1">
+
+            <header class="w3-container ">
+            </header>
+
+            <div class="w3-container w3-text-center w3-left-align">
+                <h4 style="padding-left: 30px; font-size:x-large; padding-bottom:40px;"></h4>
+
+                <p><strong>What Near is</strong> <br>NEAR is a decentralized development platform utilizing
+                    developer-friendly, sharded, proof-of-stake
+                    public blockchain that aspires to make it very easy for developers to build decentralized
+                    applications (dapps). Dapps provide users with easy-to-use applications that guarantee the security
+                    of high values assets like money and identity.
+                    <br>
+                    NEAR is building the infrastructure for the decentralized web, including the NEAR Protocol Smart
+                    Contract platform plus a variety of other supporting tools. NEAR is a scalable blockchain designed
+                    to provide the performance and user experience required to bridge the gaps in the mainstream
+                    adoption of decentralized applications. <br> <br> NEAR, unlike other next-generation
+                    blockchain-based platforms, is built from the ground up, to be the easiest in the world for both
+                    developers and their end-users, at the same time, providing the scalability and security needed to
+                    serve those users. Specifically, NEAR's architecture makes it easier to: <br> <br>
+
+                </p>
+
+            </div>
+
+
         </div>
-      
-        <p style="padding-left: 30px;">
-            NEAR is a decentralized development platform utilizing developer-friendly, sharded, proof-of-stake public blockchain that aspires to make it very easy for developers to build decentralized applications (dapps). Dapps provide users with easy-to-use applications that guarantee the security of high values assets like money and identity.
-            NEAR is building the infrastructure for the decentralized web, including the NEAR Protocol Smart Contract platform plus a variety of other supporting tools. NEAR is a scalable blockchain designed to provide the performance and user experience required to bridge the gaps in the mainstream adoption of decentralized applications. NEAR, unlike other next-generation blockchain-based platforms, is built from the ground up, to be the easiest in the world for both developers and their end-users, at the same time, providing the scalability and security needed to serve those users. Specifically, NEAR's architecture makes it easier to:
-            1: Build decentralized applications, even if you are only used to building with "traditional" web or app concepts.
-            2: Onboard users with a smooth experience, even if you have never used crypto, tokens, keys, wallets, or other blockchain artifacts.
-            3: Scale your application seamlessly - the underlying platform automatically expands capacity via sharding without additional costs or effort on your part.
-            
 
 
-        </p>
 
     </header>
 
@@ -150,26 +186,29 @@
 
 
 
-    <div class="w3-content " style="max-width:1100px">
-        <div class="w3-row w3-padding-64 ">
+    <div class="w3-content " style="max-width:1100px" id="dev">
+        <div class="w3-row w3-padding-34 ">
 
 
-            <div class="w3-col l6 w3-padding-large">
+            <div class="w3-col m6 w3-padding-large">
+                <h6 class="w3-large w3-text-dark "><strong>Build</strong> decentralized applications, even if you are
+                    only used to building with "traditional" web or
+                    app concepts. <br>
+                    <strong>Onboard</strong> users with a smooth experience, even if you have never used crypto, tokens,
+                    keys,
+                    wallets,
+                    or other blockchain artifacts. <br>
+                    <strong>Scale</strong> your application seamlessly - the underlying platform automatically expands
+                    capacity via
+                    sharding without additional costs or effort on your part.
 
-                <p class="w3-large w3-text-dark "><b>How it works</b>
-                    NEAR provides a community-operated cloud-based infrastructure for deploying and running dapps by combining the features of a decentralized database with a serverless computing platform. The NEAR token, which allows this platform to run, also enables applications built on it to interact with each other. 
-                    <p class="w3-large w3-text-dark ">Together, these features allow developers to create censorship-resistant smart contracts for applications that deal with high-end data like money, identity, assets, and open-state components that need to interact seamlessly with each other. The infrastructure which makes up this cloud is created from a potentially infinite number of "nodes" run by individuals and organizations who offer portions of their CPU and hard drive space — whether on a laptop or, more likely, professionally deployed servers. These computers run the NEAR network in the background and as such, create a decentralized network. 
-                        </p>
-                    <p>As mentioned, the NEAR community-run cloud is decentralized so that updates must be accepted by a sufficient majority of the network participants or nodes. To ensure that the operators of nodes run the code well, they participate in a staking process called "Proof of Stake". In this process, they willingly put a portion of value at 'stake' as a deposit which they forfeit if it is established that they have operated inappropriately.</p>
-                    <p>In essence, NEAR is providing a decentralized version of the cloud-hosted services provided by Amazon or Google.</p>
-                    
 
 
-                </p>
+                </h6>
             </div>
 
             <div class="w3-col m6 w3-padding-large ">
-                <img src="imgs/2.jpg" class="w3-round w3-image w3-opacity-min" alt="" width="600" height="750">
+                <img src="imgs/2.jpg" class="w3-round w3-image w3-opacity-min" alt="" width="500" height="750">
             </div>
 
         </div>
@@ -183,17 +222,18 @@
 
 
 
-        <div class="w3-row w3-padding-64 ">
+        <div class="w3-row w3-padding-64 " id="dev">
             <div class="w3-col m6 w3-padding-large ">
                 <img src="imgs/3.jpg" class="w3-round w3-image w3-opacity-min" alt="" width="600" height="750">
             </div>
 
             <div class="w3-col m6 w3-padding-large">
-                <p class="w3-large w3-text-dark ">NEAR provides a community-operated cloud-based infrastructure for
-                    deploying and running dapps by combining the features of a decentralized database with a serverless
-                    computing platform. <br> The NEAR token, which allows this platform to run, also enables
-                    applications built on it to interact with each other.
-
+                <p class="w3-large w3-text-dark ">
+                    <strong>How it work</strong><br>
+                    NEAR provides a community-operated cloud-based infrastructure for deploying and running dapps by
+                    combining the features of a decentralized database with a serverless computing platform. The NEAR
+                    token, which allows this platform to run, also enables applications built on it to interact with
+                    each other. <br>
 
 
                 </p>
@@ -209,21 +249,27 @@
 
 
     <div class="w3-container">
-        <p>
-            In a centralized cloud hosted by Amazon or Google, developers pay for applications each month based on how much usage they require, for example, based on the number of requests generated by users visiting their webpages. 
-Amazon Web Services and Google Cloud take fees up-front. Blockchain services offer a big difference because users get charged immediately when they make a call to an app, rather than developers fronting the cost of using all that infrastructure. The concept of micropayments comes into play here. 
-NEAR also provides the ability for developers to cover gas costs for users, to create a more familiar experience for those coming from web2. Builders can design applications in a way that first-timers can use funds for purchasing gas directly from an account maintained by the developer. Once onboarded, users can then transition to paying for their platform use.
-
+        <p> Together, these features allow developers to create censorship-resistant smart contracts for applications
+            that deal with high-end data like money, identity, assets, and open-state components that need to interact
+            seamlessly with each other. The infrastructure which makes up this cloud is created
+            from a potentially infinite number of "nodes" run by individuals and organizations who offer portions of
+            their CPU and hard drive space — whether on a laptop or, more likely, professionally deployed servers.
         </p>
+
 
         <div class="w3-content" style="max-width:700px">
 
             <img src="imgs/4.jpg" style="width:100%;max-width:1100px" class="w3-margin-top">
 
         </div>
-        <p>NEAR provides a community-operated cloud-based infrastructure for deploying and running dapps by combining
-            the features of a decentralized database with a serverless computing platform. The NEAR token, which allows
-            this platform to run, also enables applications built on it to interact with each other.
+        <p>These computers run the NEAR network in the background and as such, create a decentralized network.
+            As mentioned, the NEAR community-run cloud is decentralized so that updates must be accepted by a sufficient
+            majority of the network participants or nodes. To ensure that the operators of nodes run the code well, they
+            participate in a staking process called "Proof of Stake". In this process, they willingly put a portion of
+            value at 'stake' as a deposit which they forfeit if it is established that they have operated
+            inappropriately.
+            In essence, NEAR is providing a decentralized version of the cloud-hosted services provided by Amazon or
+            Google.
         </p>
 
     </div>
@@ -247,26 +293,28 @@ NEAR also provides the ability for developers to cover gas costs for users, to c
                 <img src="imgs/5.jpg" style="width:100%;max-width:1100px" class="w3-margin-top">
 
             </div>
-            <p>NEAR provides a community-operated cloud-based infrastructure for deploying and running dapps by
-                combining the features of a decentralized database with a serverless computing platform. The NEAR token,
-                which allows this platform to run, also enables applications built on it to interact with each other.
-
+            <p>from a potentially infinite number of "nodes" run by individuals and organizations who offer portions of
+                their CPU and hard drive space — whether on a laptop or, more likely, professionally deployed servers.
+                These computers run the NEAR network in the background and as such, create a decentralized network.
+                As mentioned, the NEAR community-run cloud is decentralized so that updates must be accepted by a
+                sufficient majority of the network participants or nodes.
 
 
             </p>
         </div>
 
 
-        <div class="w3-row w3-padding-64" id="menu">
+        <div class="w3-row w3-padding-64" id="dev">
             <div class="w3-col l6 w3-padding-large">
 
-                <p class="w3-large w3-text-dark "> NEAR provides a community-operated cloud-based infrastructure for
-                    deploying and running dapps by combining the features of a decentralized database with a serverless
-                    computing platform.  The NEAR token, which allows this platform to run, also enables
-                    applications built on it to interact with each other. NEAR provides a community-operated cloud-based infrastructure for deploying and running dapps by combining the features of a
-                    decentralized database with a serverless computing platform. features of a decentralized database with a
-                    serverless computing platform.
-        
+                <p class="w3-large w3-text-dark "> To ensure that the operators of nodes run the code well, they
+                    participate in a staking process called "Proof of Stake". In this process, they willingly put a
+                    portion of value at 'stake' as a deposit which they forfeit if it is established that they have
+                    operated inappropriately.
+                    In essence, NEAR is providing a decentralized version of the cloud-hosted services provided by
+                    Amazon or Google.
+
+
 
 
 
@@ -277,14 +325,6 @@ NEAR also provides the ability for developers to cover gas costs for users, to c
             <div class="w3-col l6 w3-padding-large">
                 <img src="imgs/6.jpg" class="w3-round w3-image w3-opacity-min" alt="" style="width:900px">
             </div>
-            <p > NEAR provides a community-operated cloud-based infrastructure for
-                deploying and running dapps by combining the features of a decentralized database with a serverless
-                computing platform. The NEAR token, which allows this platform to run, also enables
-                applications built on it to interact with each other.
-
-
-
-            </p>
 
         </div>
 
@@ -293,15 +333,16 @@ NEAR also provides the ability for developers to cover gas costs for users, to c
 
     <!-- conten page 3 -->
 
-    <div class="w3-content " style="max-width:1100px">
+    <div class="w3-content " style="max-width:1100px" id="dev">
 
         <div class="w3-col l6 w3-padding-large">
 
-            <p class="w3-large w3-text-dark ">NEAR provides a community-operated cloud-based infrastructure for
-                deploying and running dapps by combining the features of a decentralized database with a serverless
-                computing platform.The NEAR token, which allows this platform to run, also enables applications
-                built on it to interact with each other.
-
+            <p class="w3-large w3-text-dark ">
+                <strong>Why it is faster</strong> <br>
+                The NEAR platform has been designed to be used in a permissionless way. However, a set of
+                community-built tools and reference guides have been created to help developers.
+                The NEAR team provides a set of straightforward command-line tools to enable developers to easily
+                create, test and deploy applications from their local environments.
 
 
             </p>
@@ -316,10 +357,13 @@ NEAR also provides the ability for developers to cover gas costs for users, to c
 
 
     <div class="w3-container ">
-        <p>NEAR provides a community-operated cloud-based infrastructure for deploying and running dapps by combining
-            the features of a decentralized database with a serverless computing platform. <br> The NEAR token, which
-            allows this platform to run, also enables applications built on it to interact with each other.
-
+        <p>NEAR also uses existing technology, Gitpod, to create zero time onboarding experience for developers. Gitpod
+            provides an online "Integrated Development Environment" (IDE), which NEAR customized to allow developers to
+            easily write, test and deploy smart contracts from a web browser.
+            Very importantly, NEAR has the solutions for scaling by eliminating the barriers to Web 3 adoption. With
+            high speeds, low fees, and progressive UX, NEAR's climate-neutral blockchain is ready for explosive growth.
+            Also, NEAR is set for a multi-chain future, as it runs in concert with Ethereum, Polkadot, Cosmos, and more,
+            allowing for the free flow of assets and communication between networks for the betterment of all.
 
 
         </p>
@@ -330,11 +374,19 @@ NEAR also provides the ability for developers to cover gas costs for users, to c
             <img src="imgs/8.jpg" style="width:100%;max-width:1100px" class="w3-margin-top">
 
         </div>
-        <p>NEAR provides a community-operated cloud-based infrastructure for deploying and running dapps by combining
-            the features of a decentralized database with a serverless computing platform. <br> The NEAR token, which
-            allows this platform to run, also enables applications built on it to interact with each other.
-
-
+        <p><strong>Why it is "greener" (more ecofriendly)</strong> <br>
+            NEAR is greener because it utilizes climate-neutral blockchain technology. Plus, it is the only protocol and
+            ecosystem built for mass adoption. Every single decision made is to unlock millions and billions of people
+            to join Open Web / Web3.
+            <br>
+            <strong>What can be done on it</strong> <br>
+            <strong>On NEAR, you can:</strong> <br>
+            Build decentralized apps on a developer-friendly platform that features low fees, high speeds, and infinite
+            scalability. <br>
+            Start up or grow up on a platform that sets you up for success. Investors, partners, and users are waiting.
+            <br>
+            Belong to a community. When you find your purpose, you find your people. Pick a wallet, create an account,
+            and start contributing today.
 
         </p>
     </div>
@@ -362,12 +414,15 @@ NEAR also provides the ability for developers to cover gas costs for users, to c
 
             <div class="w3-col l6 w3-padding-large">
 
-                <p class="w3-large w3-text-dark ">NEAR provides a community-operated cloud-based infrastructure for
-                    deploying and running dapps by combining the features of a decentralized database with a serverless
-                    computing platform. <br> The NEAR token, which allows this platform to run, also enables
-                    applications
-                    built on it to interact with each other.
+                <p class="w3-large w3-text-dark "> <strong>Reimagine your world.</strong> <br>
+                    Through simple, secure, and scalable technology, NEAR empowers millions to invent and explore new
+                    experiences. Business, creativity, and community are being reimagined for a more sustainable and
+                    inclusive future. <br> <br>
 
+                    <strong>Who can build on it</strong> <br>
+                    Developers can build on it. Development on the NEAR platform happens in two main categories:
+                    ·Smart Contracts (back-end)
+                    ·Applications (front-end)
 
 
                 </p>
@@ -394,11 +449,11 @@ NEAR also provides the ability for developers to cover gas costs for users, to c
             </div>
 
             <div class="w3-col m6 w3-padding-large">
-                <p class="w3-large w3-text-dark ">NEAR provides a community-operated cloud-based infrastructure for
-                    deploying and running dapps by combining the features of a decentralized database with a serverless
-                    computing platform. <br> The NEAR token, which allows this platform to run, also enables
-                    applications built on it to interact with each other.
-
+                <p class="w3-large w3-text-dark ">
+                    <strong> Who is building on it</strong> <br>
+                    Projects are already taking advantage of NEAR's building experience. Flux Protocol, Mintbase, and
+                    Zed.Run, amongst others, are leveraging NEAR's speed and low-cost development to grow their user
+                    communities.
 
 
                 </p>
@@ -427,10 +482,10 @@ NEAR also provides the ability for developers to cover gas costs for users, to c
             <img src="imgs/11.jpg" style="width:100%;max-width:1100px" class="w3-margin-top">
 
         </div>
-        <p>NEAR provides a community-operated cloud-based infrastructure for deploying and running dapps by
-            combining the features of a decentralized database with a serverless computing platform. The NEAR
-            token, which allows this platform to run, also enables applications built on it to interact with each
-            other.
+        <p>NEAR focuses on providing solutions to the two core problems of today's blockchains — usability and
+            scalability. Usability for end-users is achieved by providing a security model for wallet interactions and
+            giving developers more opportunities to create experiences that closely resemble applications and
+            experiences the masses are familiar with.
 
 
 
@@ -454,12 +509,12 @@ NEAR also provides the ability for developers to cover gas costs for users, to c
             <img src="imgs/12.jpg" style="width:100%;max-width:1100px" class="w3-margin-top">
 
         </div>
-        <p>NEAR provides a community-operated cloud-based infrastructure for deploying and running dapps by
-            combining the features of a decentralized database with a serverless computing platform. The NEAR
-            token, which allows this platform to run, also enables applications built on it to interact with each
-            other.
+        <p>
 
-
+            Usability for developers is attained by setting up the protocol to allow browser-based debugging, familiar
+            programming languages (like AssemblyScript and Rust), and contract usage rebates or rewards. Scalability is
+            made possible by sharding the chain into a potentially unlimited number of subchains, each operating in
+            parallel.
 
         </p>
 
@@ -472,23 +527,25 @@ NEAR also provides the ability for developers to cover gas costs for users, to c
 
         <div
             style="width: 40%; margin-left: 30%; position: absolute; top: 25%; display: flex; flex-direction: column; align-items: center;">
-            
+            <img src="./font/NEAR_PressKit/NEAR_PressKit/PNG/near_icon.png" alt="" style="width: 30%;">
             <div class="w3-row   w3-text-black " style="margin-top: 2rem; ">
-              
+
                 <div class="dis">
-                    <a  href="https://twitter.com/nearprotocol"> <i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://twitter.com/nearprotocol"> <i class="fa-brands fa-twitter"></i></a>
                     <a href="https://gov.near.org/"> <i class="fa-brands fa-discourse"></i></a>
-                    <a href="https://www.youtube.com/channel/UCuKdIYVN8iE3fv8alyk1aMw"> <i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.youtube.com/channel/UCuKdIYVN8iE3fv8alyk1aMw"> <i
+                            class="fa-brands fa-youtube"></i></a>
                     <a href="https://near.org/wechat"> <i class="fa-brands fa-weixin"></i></a>
                     <a href="http://near.chat/"> <i class="fa-brands fa-discord"></i></a>
                     <a href="https://github.com/near"> <i class="fa-brands fa-github"></i></a>
                     <a href="https://t.me/cryptonear"> <i class="fa-brands fa-telegram"></i></a>
 
                 </div>
-               
+
             </div>
 
-            <p &copy 2022 style="font-size: medium;">&copy 2022 <a href="https://near.org" title="NEAR" class="w3-hover-text-gray">NEAR  </a> </p>
+            <p &copy 2022 style="font-size: medium;">&copy 2022 <a href="https://near.org" title="NEAR"
+                    class="w3-hover-text-gray">NEAR </a> </p>
 
         </div>
     </div>
